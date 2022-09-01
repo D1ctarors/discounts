@@ -1,0 +1,168 @@
+@import "../fonts/FontsStyle.css";
+
+@import "_nullstyle.scss";
+@import "_Animations.scss";
+@import "_mixins.scss";
+@import "_Header.scss";
+@import "_StartUse.scss";
+@import "_ChooseSubscription.scss";
+@import "_HowWorks.scss";
+@import "_AboutUs.scss";
+@import "_FAQ.scss";
+@import "_Footer.scss";
+
+
+
+
+
+
+// DEFAULT SETTINGS
+html,
+body {
+	font-family: 'Gotham Pro', sans-serif;
+	background: #ECF3FB;
+	height: 100%;
+}
+body {
+	overflow-x: hidden;
+}
+.no-select {
+	pointer-events: none;
+	user-select: none;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.main {
+
+	flex: 1 1 auto;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 10px;
+
+}
+
+.LearnMoreBtn,
+.LogInButton {
+	background: #1749B3;
+	border-radius: 16px;
+	line-height: 3.5;
+	padding: 0 24px;
+	cursor: pointer;
+	transition: all .2s ease;
+
+	span {
+		font-family: 'Gotham Pro';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 130%;
+		color: #FFFFFF;
+	}
+
+	&:hover {
+		background: #FFFFFF;
+		border: 1px solid #1749B3;
+		transition: all .2s ease;
+
+		span {
+			color: #171717;
+		}
+	}
+
+	&:active {
+		transition: all .2s ease;
+		background: #4B84FD;
+		border: 1px solid #4B84FD;
+
+		span {
+			color: #FFFFFF;
+		}
+	}
+}
+
+.LogInButton {
+
+	border-radius: 12px;
+	padding: 0 40px;
+	line-height: 2.7;
+	border: 1px solid #ffffff;
+
+}
+
+.StartBtn {
+
+	background: #FFFFFF;
+	border-radius: 16px;
+	line-height: 50px;
+	padding: 0 50px;
+
+	border: 1px solid #1749B3;
+	transition: all .2s ease;
+
+	span {
+
+		font-family: 'Gotham Pro';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 17px;
+		line-height: 1.9;
+		color: #171717;
+	}
+
+	&:hover {
+		background: rgb(23, 73, 179);
+		border: 1px solid #ffffff;
+		transition: all .2s ease;
+
+		span {
+			color: #fff;
+		}
+	}
+
+	&:active {
+		background: rgba(255, 255, 255, 0.8);
+		border: 1px solid rgba(255, 255, 255, 0.8);
+		transition: all .2s ease;
+
+		span {
+			color: #171717;
+		}
+	}
+}
+
+.ReaquestBlock__ClickBtn {
+	padding: 0 80px;
+}
+
+
+@media (max-width: $bigTablet) {
+	.container {
+		padding: 0 20px;
+	}
+
+	.ChooseSubscription,
+	.ReaquestBlock,
+	.HowWorks-invite,
+	.AboutUs,
+	.SectionMain__body,
+	.FAQ {
+		margin-bottom: 100px;
+	}
+}
+
+
+@media (max-width: $mobile) {
+	.StartBtn {
+		width: 100%;
+		text-align: center;
+	}
+}

@@ -1,0 +1,191 @@
+.StartUsing {
+	display: flex;
+
+
+	align-items: center;
+	margin: 0 0 120px 0;
+	justify-content: center;
+
+}
+
+.StartInfo {
+
+	max-width: 592px;
+	height: 500px;
+	padding: 60px;
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+
+	background: #1749B3;
+	box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+	border-radius: 32px;
+	margin-right: 16px;
+	color: #FFFFFF;
+
+
+
+	&__title {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 140%;
+		letter-spacing: 1px;
+
+		span {
+			// animation: DiscountPrice 2s ease 0s infinite normal forwards;
+			// margin-left: 30px;
+
+			// display: inline-block;
+			// font-size: 50px;
+		}
+
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		margin: 24px 0 40px 0;
+	}
+
+
+}
+
+.StartUsing__Woman {
+	background-color: #fff;
+	width: 592px;
+	height: 500px;
+	overflow: hidden;
+	border-radius: 32px;
+
+	box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+
+	}
+}
+
+
+@media (max-width: $bigTablet) {
+	.StartUsing {
+		gap: 16px;
+
+		&__StartInfo {
+			width: 380px;
+			height: 341px;
+			padding: 30px;
+			border-radius: 24px;
+			margin-right: 0;
+
+		}
+
+		&__Woman {
+			width: 380px;
+			height: 341px;
+			border-radius: 24px;
+		}
+	}
+
+	.StartInfo {
+		&__subtitle {
+			letter-spacing: normal;
+			// line-height: 100%;
+			margin: 10px 0 20px 0;
+
+		}
+	}
+}
+
+@media (max-width: $tablet) {
+
+
+	.StartUsing {
+		flex-wrap: wrap-reverse;
+
+		&__inner {}
+
+		&__StartInfo {}
+
+		&__Woman {}
+	}
+
+
+
+	.StartInfo {
+
+		&__title {
+			font-size: 28px;
+			letter-spacing: normal;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+			margin: 16px 0 32px 0;
+		}
+	}
+
+	.StartBtn {}
+}
+
+@media (max-width: $mobile) {
+	.StartUsing {
+
+		&__StartInfo {}
+
+		&__Woman {
+			width: 100%;
+			height: 276px;
+			border-radius: 18.624px;
+			// margin-bottom: 16px;
+		}
+	}
+
+	.StartInfo {
+
+		width: 100%;
+		height: 344px;
+		padding: 20px;
+		border-radius: 18.624px;
+		justify-content: space-around;
+
+		&__title {
+			font-size: 28px;
+			line-height: normal;
+
+		}
+
+		&__subtitle {
+			line-height: normal;
+
+		}
+	}
+
+	.StartUseBtn {
+
+		border-radius: 16px;
+		line-height: 14.5px;
+		padding: 0;
+		width: 100%;
+		align-self: stretch;
+
+		&:hover {
+
+			border: 1px solid #ffffff;
+
+		}
+
+		span {
+			font-size: 14px;
+		}
+	}
+}

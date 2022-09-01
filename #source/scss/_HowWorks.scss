@@ -1,0 +1,326 @@
+.SectionMain {
+	&__title {}
+}
+
+.HowWorks {
+
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	&__item {
+
+		background: #FFFFFF;
+		box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+		border-radius: 32px;
+		position: relative;
+		width: 358px;
+		height: 300px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		padding: 0 0 40px 40px;
+
+
+		// &:nth-child(1) {
+		// 	transform: translate(200%, 0);
+		// 	transition: all .8s ease 0s;
+		// 	opacity: 0;
+		// }
+
+		// &:nth-child(2) {
+		// 	transform: translate(200%, 0);
+		// 	transition: all .8s ease .3s;
+		// 	opacity: 0;
+		// }
+
+		// &:nth-child(3) {
+		// 	transform: translate(200%, 0);
+		// 	transition: all .8s ease .5s;
+		// 	opacity: 0;
+		// }
+
+	}
+}
+
+.HowWorks-item {
+	
+
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 140%;
+		margin-bottom: 26px;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: #333333;
+		max-width: 200px;
+	}
+
+	&__ico {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+
+
+.HowWorks-invite {
+	margin-bottom: 120px;
+	display: flex;
+	justify-content: space-between;
+	background: #1749B3;
+	box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
+	border-radius: 32px;
+	padding: 40px 80px;
+
+	&__info {
+		font-weight: 400;
+
+		color: #FFFFFF;
+	}
+
+	&__title {
+		font-size: 26px;
+		line-height: 140%;
+		margin-bottom: 24px;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+		line-height: 150%;
+		max-width: 500px;
+	}
+
+	&__ClickBtn {
+		background: #F1F4F8;
+		border-radius: 16px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 28px 72px;
+
+
+
+	}
+}
+
+.ClickBtn {
+	align-self: center;
+
+	&__title {
+		color: #171717;
+		margin-bottom: 10px;
+		font-size: 20px;
+		line-height: 140%;
+	}
+
+	&__link {
+		text-decoration-line: underline;
+		text-transform: uppercase;
+		color: #1749B3;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 150%;
+		display: flex;
+		align-items: center;
+		gap: 11px;
+		cursor: pointer;
+
+		&:hover {
+			color: #171717;
+			text-decoration: underline;
+
+		}
+
+		&:active {
+			color: #606060;
+			text-decoration: underline;
+
+		}
+
+	}
+}
+
+@media (max-width: $bigTablet) {
+
+	.HowWorks-item {
+
+		&__title {}
+
+		&__subtitle {}
+
+		&__ico {}
+	}
+
+	.HowWorks-invite {
+		padding: 40px 55px;
+
+		&__info {
+			max-width: 450px;
+		}
+	}
+
+	.ClickBtn {
+		padding: 24px 35px;
+	}
+}
+
+@media (max-width: $tablet) {
+	.HowWorks {
+
+		&__body {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+		}
+
+		&__item {
+			width: 224px;
+			height: 186px;
+			border-radius: 24px;
+			padding: 48px 20px 20px 20px;
+			justify-content: space-between;
+
+		}
+	}
+
+	.HowWorks-item {
+
+		&__title {
+			margin-bottom: 0;
+			font-size: 19px;
+		}
+
+		&__subtitle {
+			max-width: 184px;
+			font-size: 17px;
+			line-height: 150%;
+		}
+
+		&__ico {
+			display: block;
+			top: 20px;
+			right: 20px;
+
+			img {
+				height: 80px;
+				width: 80px;
+			}
+
+		}
+	}
+
+	.HowWorks-invite {
+		padding: 28px;
+
+		// flex-wrap: wrap;
+		// gap: 32px;
+		// text-align: center;
+		&__info {
+			max-width: 240px;
+		}
+
+		&__title {
+			font-size: 24;
+			margin-bottom: 16px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+			line-height: 150%;
+		}
+
+		&__ClickBtn {
+			padding: 20px;
+			// display: inline;
+		}
+	}
+
+	.ClickBtn {
+
+		&__title {
+			font-size: 18px;
+		}
+
+		&__link {
+			font-size: 18px;
+
+			img {
+				// display: none;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: $mobile) {
+	.HowWorks-invite {
+		padding: 20px;
+
+		flex-wrap: wrap;
+		gap: 32px;
+		text-align: start;
+
+		&__info {
+			max-width: 100%;
+		}
+
+		&__title {
+			font-size: 24;
+			margin-bottom: 16px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+			line-height: 150%;
+			max-width: 290px;
+		}
+
+		&__ClickBtn {
+			padding: 20px;
+			// display: inline;
+		}
+	}
+
+	.HowWorks-item {
+		width: 100%;
+		height: 172px;
+
+		&__subtitle {
+			max-width: 100%;
+		}
+	}
+
+	.HowWorks-item__ico img {
+		height: 95px;
+		width: 95px;
+	}
+
+	.ClickBtn {
+		width: 100%;
+
+		&__title {
+			font-size: 18px;
+		}
+
+		&__link {
+			font-size: 18px;
+
+			img {
+				// display: none;
+			}
+		}
+	}
+}

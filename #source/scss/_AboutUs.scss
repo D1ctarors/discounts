@@ -1,0 +1,104 @@
+.AboutUs {
+	margin-bottom: 120px;
+
+
+	&__body {
+		display: flex;
+		// flex-wrap: nowrap;
+		justify-content: center;
+		gap: 16px;
+	}
+
+	&__subtitle {
+		font-size: 18px;
+		line-height: 150%;
+		color: #333333;
+		max-width: 470px;
+
+		p {
+			margin-bottom: 32px;
+
+			&:last-child {
+				margin-bottom: 0;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.AboutUsInfo {
+	background: rgb(255, 255, 255);
+	// width: 344px;
+	// height: 412px;
+
+	&__logo {}
+}
+
+.AboutUs__Woman {
+	// width: 344px;
+	// height: 412px;
+}
+
+@media(max-width: $desktop) {}
+
+
+@media(max-width: $bigTablet) {
+	.AboutUs {
+		margin-bottom: 120px;
+
+
+		&__body {
+			flex-wrap: wrap-reverse;
+		}
+
+		&__subtitle {
+			font-size: 18px;
+			line-height: 150%;
+			color: #333333;
+			max-width: 305px;
+			margin: 0;
+
+			p {
+				font-weight: 400;
+				font-size: 17px;
+				line-height: 150%;
+				margin: 0 0 16px 0;
+
+				&:last-child {
+					margin-bottom: 0;
+
+				}
+			}
+		}
+	}
+
+	.AboutUsInfo {
+		background: rgb(255, 255, 255);
+		width: 344px;
+		height: auto;
+		padding: 20px;
+
+		justify-content: start;
+
+
+
+		&__logo {
+			margin-bottom: 20px;
+
+			img {
+				width: 60px;
+				height: 60px;
+			}
+
+		}
+	}
+
+	.AboutUs__Woman {
+		width: 344px;
+		min-height: 412px;
+	}
+}
+
+@media(max-width: $tablet) {}
+
+@media(max-width: $mobile) {}
