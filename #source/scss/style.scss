@@ -22,9 +22,10 @@ body {
 	font-family: 'Gotham Pro', sans-serif;
 	background: #ECF3FB;
 	height: 100%;
+	overflow-x: hidden;
 }
 body {
-	overflow-x: hidden;
+	// overflow-x: hidden;
 }
 .no-select {
 	pointer-events: none;
