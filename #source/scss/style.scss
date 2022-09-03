@@ -10,6 +10,7 @@
 @import "_AboutUs.scss";
 @import "_FAQ.scss";
 @import "_Footer.scss";
+@import "_SubscriptionOnservices.scss";
 
 
 
@@ -24,9 +25,11 @@ body {
 	height: 100%;
 	overflow-x: hidden;
 }
+
 body {
 	// overflow-x: hidden;
 }
+
 .no-select {
 	pointer-events: none;
 	user-select: none;
@@ -52,7 +55,8 @@ body {
 }
 
 .LearnMoreBtn,
-.LogInButton {
+.LogInButton,
+.Service-page-item__btn {
 	background: #1749B3;
 	border-radius: 16px;
 	line-height: 3.5;
@@ -99,6 +103,11 @@ body {
 
 }
 
+.Service-page-item__btn {
+	line-height: 54px;
+	border: 1px solid #1749B3;
+}
+
 .StartBtn {
 
 	background: #FFFFFF;
@@ -143,6 +152,21 @@ body {
 .ReaquestBlock__ClickBtn {
 	padding: 0 80px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: $bigTablet) {

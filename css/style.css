@@ -192,12 +192,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .header__list li {
   margin-right: 46px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
-.header__list li:hover a {
-  position: relative;
+.header__list li:hover a, .header__list li:focus a {
+  color: #1749B3;
 }
 .header__list a {
   -webkit-transition: all 0.2s ease;
@@ -210,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 150%;
   color: #333333;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 .header__list a img {
   margin-top: 2px;
@@ -223,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   gap: 10px;
 }
-.header__list:last-child {
+.header__list a:last-child {
   margin-right: 0;
 }
 
@@ -269,12 +276,180 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2px;
+  gap: 5px;
 }
 .FunctionsHeader__SpoilerLanguges img {
   margin-top: 1px;
 }
 
+.dropdown-case {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownBtn {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: none;
+  margin-right: 46px;
+}
+.dropdownBtn::after {
+  content: "";
+  position: absolute;
+  top: 48%;
+  right: -15px;
+  height: 3.89px;
+  width: 6.86px;
+  background: url("/img/arrow-down-s-line.svg") no-repeat;
+}
+.dropdownBtn:hover, .dropdownBtn:focus {
+  color: #1749B3;
+}
+.dropdownBtn:focus::after {
+  content: "";
+  -webkit-transform-origin: 50% 50% 0px;
+      -ms-transform-origin: 50% 50% 0px;
+          transform-origin: 50% 50% 0px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.dropdownList {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  z-index: 2;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+          box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+  border-radius: 16px;
+  padding: 25px;
+  min-width: 215px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.dropdownList a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  display: block;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.dropdownList a:last-child {
+  margin-bottom: 0;
+}
+.dropdownList a:hover, .dropdownList a:focus {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #1749B3;
+}
+
+.SpoilerLanguges-case {
+  position: relative;
+  display: inline-block;
+}
+
+.FunctionsHeader__SpoilerLanguges {
+  background: #fff;
+}
+
+.SpoilerLanguges-btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: none;
+  position: relative;
+}
+.SpoilerLanguges-btn::after {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: -15px;
+  height: 3.89px;
+  width: 6.86px;
+  background: url("/img/arrow-down-s-line.svg") no-repeat;
+}
+.SpoilerLanguges-btn:hover, .SpoilerLanguges-btn:focus {
+  color: #1749B3;
+}
+.SpoilerLanguges-btn:focus::after {
+  content: "";
+  -webkit-transform-origin: 50% 50% 0px;
+      -ms-transform-origin: 50% 50% 0px;
+          transform-origin: 50% 50% 0px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.SpoilerLangugesList {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  z-index: 2;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+          box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+  border-radius: 16px;
+  padding: 25px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.SpoilerLangugesList a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  display: block;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.SpoilerLangugesList a:last-child {
+  margin-bottom: 0;
+}
+.SpoilerLangugesList a:hover, .SpoilerLangugesList a:focus {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #1749B3;
+}
+.SpoilerLangugesList option {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  display: block;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.SpoilerLangugesList option:last-child {
+  margin-bottom: 0;
+}
+
+.change-lang {
+  cursor: pointer;
+}
 @media (max-width: 1169.98px) {
   .header__list li {
     margin-right: 36px;
@@ -289,6 +464,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header h2 {
     display: none;
+  }
+  .dropdownBtn {
+    margin-right: 25px;
   }
 }
 @media (max-width: 767.98px) {
@@ -478,6 +656,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 150%;
     font-weight: 500;
+  }
+  .dropdownBtn {
+    margin-right: 0;
   }
 }
 @media (max-width: 479.98px) {
@@ -1553,6 +1734,206 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+.Service-page__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.Service-page__title {
+  margin-bottom: 20px;
+}
+.Service-page__subtitle {
+  text-align: center;
+  margin-bottom: 48px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #333333;
+}
+.Service-page__subtitle span {
+  color: #1749B3;
+}
+
+.Service-page-item {
+  min-width: 224px;
+  padding: 30px;
+  max-width: 389px;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+          box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+  border-radius: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.Service-page-item__title {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%;
+  color: #0F0F0F;
+  padding: 20px 32px 32px 32px;
+  position: relative;
+}
+.Service-page-item__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #DBDBDB;
+}
+.Service-page-item__list {
+  margin-top: 35px;
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 100px;
+}
+.Service-page-item__list li {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5C5C5C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 20px;
+}
+.Service-page-item__list li:last-child {
+  margin-bottom: 0;
+}
+.Service-page-item__list li img {
+  margin-right: 15px;
+  display: block;
+}
+.Service-page-item__cost {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  color: #0F0F0F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+.Service-page-item__cost span {
+  margin-top: -5px;
+  display: block;
+  font-size: 26px;
+  margin-right: 3px;
+}
+.Service-page-item__btn {
+  line-height: 54px;
+}
+.Service-page-item__btn-dark {
+  margin: 0;
+}
+
+.Service-page__switcherCost {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.switcherCost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.switcherCost__btn {
+  cursor: pointer;
+  padding: 17px 45px;
+  background: #ECF3FB;
+  border: 1px solid #1749B3;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #030303;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.switcherCost__btn.activeSwitch {
+  background: #1749B3;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #FFFFFF;
+}
+.switcherCost__btn-left {
+  border-radius: 12px 0px 0px 12px;
+}
+.switcherCost__btn-right {
+  border-radius: 0px 12px 12px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .Service-page__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Service-page-item {
+    padding: 0 16px 30px 16px;
+  }
+  .Service-page-item__title {
+    padding: 20px;
+  }
+  .Service-page-item__list {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+  .Service-page-item__cost {
+    font-size: 30px;
+    line-height: 130%;
+  }
+  .Service-page-item__cost span {
+    font-size: 16px;
+    margin-top: -4;
+  }
+}
+@media (max-width: 479.98px) {
+  .Service-page-item {
+    padding: 32px 16px 32px 16px;
+  }
+  .Service-page-item__title {
+    padding: 0 20px 20px 20px;
+  }
+  .Service-page-item__list {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .Service-page-item__cost {
+    font-size: 30px;
+    line-height: 130%;
+  }
+}
 html,
 body {
   font-family: "Gotham Pro", sans-serif;
@@ -1593,7 +1974,8 @@ body {
 }
 
 .LearnMoreBtn,
-.LogInButton {
+.LogInButton,
+.Service-page-item__btn {
   background: #1749B3;
   border-radius: 16px;
   line-height: 3.5;
@@ -1604,7 +1986,8 @@ body {
   transition: all 0.2s ease;
 }
 .LearnMoreBtn span,
-.LogInButton span {
+.LogInButton span,
+.Service-page-item__btn span {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
@@ -1613,7 +1996,8 @@ body {
   color: #FFFFFF;
 }
 .LearnMoreBtn:hover,
-.LogInButton:hover {
+.LogInButton:hover,
+.Service-page-item__btn:hover {
   background: #FFFFFF;
   border: 1px solid #1749B3;
   -webkit-transition: all 0.2s ease;
@@ -1621,11 +2005,13 @@ body {
   transition: all 0.2s ease;
 }
 .LearnMoreBtn:hover span,
-.LogInButton:hover span {
+.LogInButton:hover span,
+.Service-page-item__btn:hover span {
   color: #171717;
 }
 .LearnMoreBtn:active,
-.LogInButton:active {
+.LogInButton:active,
+.Service-page-item__btn:active {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1633,7 +2019,8 @@ body {
   border: 1px solid #4B84FD;
 }
 .LearnMoreBtn:active span,
-.LogInButton:active span {
+.LogInButton:active span,
+.Service-page-item__btn:active span {
   color: #FFFFFF;
 }
 
@@ -1642,6 +2029,11 @@ body {
   padding: 0 40px;
   line-height: 2.7;
   border: 1px solid #ffffff;
+}
+
+.Service-page-item__btn {
+  line-height: 54px;
+  border: 1px solid #1749B3;
 }
 
 .StartBtn {
