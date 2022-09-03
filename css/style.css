@@ -368,13 +368,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .FunctionsHeader__SpoilerLanguges {
-  background: #fff;
+  background: none;
 }
 
 .SpoilerLanguges-btn {
   text-transform: uppercase;
   cursor: pointer;
-  background: #FFFFFF;
+  background: none;
   border: none;
   position: relative;
 }
