@@ -1,7 +1,7 @@
-$desktop: 1169.98px;
-$bigTablet: 991.98px; // Планшеты, некоторые телефоны в горизонтальном положении
-$tablet: 767.98px; // Телефоны L
-$mobile: 479.98px; // Телефоны S
+$desktop: 1170px;
+$bigTablet: 992px; // Планшеты, некоторые телефоны в горизонтальном положении
+$tablet: 768px; // Телефоны L
+$mobile: 480px; // Телефоны S
 
 @media(max-width: $desktop) {}
 @media(max-width: $bigTablet) {}

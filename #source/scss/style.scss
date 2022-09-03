@@ -30,6 +30,16 @@ body {
 	// overflow-x: hidden;
 }
 
+// =============
+.SectionMain__title {
+	span {
+		display: block;
+		margin-top: 50px;
+		font-size: 15px;
+	}
+}
+
+
 .no-select {
 	pointer-events: none;
 	user-select: none;
