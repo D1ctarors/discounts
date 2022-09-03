@@ -1962,7 +1962,7 @@ body {
 
 .SectionMain__title span {
   display: block;
-  margin-top: 50px;
+  margin: 25px 0 100px 0;
   font-size: 15px;
 }
 
