@@ -1957,6 +1957,7 @@ body {
   font-family: "Gotham Pro", sans-serif;
   background: #ECF3FB;
   height: 100%;
+  position: relative;
   overflow-x: hidden;
 }
 

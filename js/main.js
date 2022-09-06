@@ -43,24 +43,24 @@ addActiveForBurger();
 
 
 function workSwither() {
-	// $(document).ready(function () {
-	// 	$('.switcherCost__btn').click(function (event) {
-	// 		$('.switcherCost__btn').toggleClass('activeSwitch');
-	// 	})
-	// });
+	$(document).ready(function () {
+		$('.switcherCost__btn').click(function (event) {
+			$('.switcherCost__btn').toggleClass('activeSwitch');
+		})
+	});
 
 
-	// 	let switcher = document.getElementById('switcher');
-	// 	switcher.addEventListener('click', change);
-	// 	function change(event) {
-	// 		let switcherButton = event.target;
-	// 		// let switcherBtnLeft = document.getElementsByClassName('.switcherCost__btn-left');
-	// 		// let switcherBtnRight = document.getElementsByClassName('.switcherCost__btn-right');
-	// 		let switcherButtons = document.querySelector('.switcherCost__btn');
-	// 		switcherButtons.toggleClass('.activeSwitch');
-	// 		if (switcherButton.className == '.activeSwitch') {
-	// 		}
-	// 	}
+		let switcher = document.getElementById('switcher');
+		switcher.addEventListener('click', change);
+		function change(event) {
+			let switcherButton = event.target;
+			// let switcherBtnLeft = document.getElementsByClassName('.switcherCost__btn-left');
+			// let switcherBtnRight = document.getElementsByClassName('.switcherCost__btn-right');
+			let switcherButtons = document.querySelector('.switcherCost__btn');
+			switcherButtons.classList.toggle('.activeSwitch');
+			if (switcherButton.className == '.activeSwitch') {
+			}
+		}
 
 
 
