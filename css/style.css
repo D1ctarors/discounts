@@ -1958,7 +1958,12 @@ body {
   background: #ECF3FB;
   height: 100%;
   position: relative;
-  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  html,
+body {
+    overflow-x: hidden;
+  }
 }
 
 .SectionMain__title span {

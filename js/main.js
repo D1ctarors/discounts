@@ -30,7 +30,6 @@ function ShowAccordion() {
 }
 ShowAccordion();
 
-
 function addActiveForBurger() {
 	$(document).ready(function () {
 		$('.burger').click(function (event) {
@@ -41,7 +40,6 @@ function addActiveForBurger() {
 }
 addActiveForBurger();
 
-
 function workSwither() {
 	$(document).ready(function () {
 		$('.switcherCost__btn').click(function (event) {
@@ -50,23 +48,23 @@ function workSwither() {
 	});
 
 
-		let switcher = document.getElementById('switcher');
-		switcher.addEventListener('click', change);
-		function change(event) {
-			let switcherButton = event.target;
-			// let switcherBtnLeft = document.getElementsByClassName('.switcherCost__btn-left');
-			// let switcherBtnRight = document.getElementsByClassName('.switcherCost__btn-right');
-			let switcherButtons = document.querySelector('.switcherCost__btn');
-			switcherButtons.classList.toggle('.activeSwitch');
-			if (switcherButton.className == '.activeSwitch') {
-			}
+	let switcher = document.getElementById('switcher');
+	console.log(switcher);
+
+
+	switcher.addEventListener('click', change);
+	function change(event) {
+		let switcherButton = event.target;
+		// let switcherBtnLeft = document.getElementsByClassName('.switcherCost__btn-left');
+		// let switcherBtnRight = document.getElementsByClassName('.switcherCost__btn-right');
+		let switcherButtons = document.querySelector('.switcherCost__btn');
+		switcherButtons.classList.toggle('.activeSwitch');
+		if (switcherButton.className == '.activeSwitch') {
 		}
-
-
+	}
 
 }
-workSwither();
-
+// workSwither();
 
 function show_list() {
 	var courses = document.getElementById("dropdown-list");
@@ -77,6 +75,7 @@ function show_list() {
 		courses.style.display = "block";
 	}
 }
+
 function show_spoilerLanguges() {
 	var spoilerList = document.getElementById("spoilerLanguges-list");
 
@@ -86,6 +85,7 @@ function show_spoilerLanguges() {
 		spoilerList.style.display = "block";
 	}
 }
+
 window.onclick = function (event) {
 	if (!event.target.matches('.dropdownBtn')) {
 		document.getElementById('dropdown-list')
@@ -97,7 +97,6 @@ window.onclick = function (event) {
 	}
 }
 
-// =============================================
 
 
 

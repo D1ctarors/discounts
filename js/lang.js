@@ -29,4 +29,4 @@ const langArr = {
 		"en": "more details",
 		"ua": "детально про товар",
 	},
-}
+};
